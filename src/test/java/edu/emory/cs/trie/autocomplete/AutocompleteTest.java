@@ -31,9 +31,9 @@ public class AutocompleteTest {
     @Test
     public void test() {
         final String dict_file = "src/main/resources/dict.txt";
-        final int max = 20;
+        final int max = 3;
 
-        Autocomplete<?> ac = new AutocompleteChoi(dict_file, max);
+        Autocomplete<?> ac = new AutocompleteTramsen2(dict_file, max);
         Eval eval = new Eval();
         testAutocomplete(ac, eval);
     }
